@@ -56,6 +56,21 @@
   font-size: 1.5rem;
 }
 
+.select {
+  display: block;
+  margin: 0 auto;
+  padding: 4px 6px;
+  width: 200px;
+  outline: none;
+  border: 2px solid #555;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.select:focus {
+  border-color: #0070f3;
+}
+
 .code {
   background: #fafafa;
   border-radius: 5px;

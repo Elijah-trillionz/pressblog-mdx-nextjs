@@ -1,0 +1,14 @@
+{
+  "description" : "Commencez par éditer",
+  "footer" : "Alimenté par",
+  "list1-body" : "Trouvez des informations détaillées sur les fonctionnalités et l'API de Next.js.",
+  "list1-title" : "Documentation",
+  "list2-body" : "Découvrez Next.js dans un cours interactif avec des quiz !",
+  "list2-title" : "Apprendre",
+  "list3-body" : "Découvrez et déployez des exemples de projets Next.js standard.",
+  "list3-title" : "Exemples",
+  "list4-body" : "Déployez instantanément votre site Next.js sur une URL publique avec Vercel.",
+  "list4-title" : "Déployer",
+  "translate-paragraph" : "Traduire la page",
+  "welcome" : "Bienvenue"
+}

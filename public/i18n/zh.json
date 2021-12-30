@@ -1,0 +1,14 @@
+{
+  "description" : "从编辑开始",
+  "footer" : "供电",
+  "list1-body" : "查找有关 Next.js 功能和 API 的深入信息。",
+  "list1-title" : "文档",
+  "list2-body" : "प्रश्नोत्तरी के साथ इंटरैक्टिव पाठ्यक्रम में Next.js के बारे में जानें!",
+  "list2-title" : "学习",
+  "list3-body" : "发现并部署样板示例 Next.js 项目。",
+  "list3-title" : "例子",
+  "list4-body" : "使用 Vercel 立即将 Next.js 站点部署到公共 URL。",
+  "list4-title" : "部署",
+  "translate-paragraph" : "翻译页面",
+  "welcome" : "欢迎"
+}

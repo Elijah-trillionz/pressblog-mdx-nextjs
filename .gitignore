@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+
+article.md
+
 # production
 /build
 

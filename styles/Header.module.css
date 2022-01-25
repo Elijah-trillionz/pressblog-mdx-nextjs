@@ -1,0 +1,16 @@
+.header {
+  padding: 10px 0;
+  background-color: rgb(164, 233, 228);
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}

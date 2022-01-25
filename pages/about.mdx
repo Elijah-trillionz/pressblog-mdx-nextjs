@@ -1,0 +1,11 @@
+import MeetMe from '../components/MeetMe.mdx';
+import HomeLayout from '../layouts/HomeLayout';
+import MoreAboutMe from '../data/MoreAboutMe.md';
+
+<MeetMe excerpt={false} />
+
+<MoreAboutMe />
+
+export default ({ children }) => (
+  <HomeLayout title='About John Doe - PressBlog'>{children}</HomeLayout>
+);

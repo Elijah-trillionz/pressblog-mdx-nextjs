@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
 
-const PostOutline = ({ post }) => {
+const PostItem = ({ post }) => {
   return (
     <div>
       <h3>
@@ -13,4 +12,4 @@ const PostOutline = ({ post }) => {
   );
 };
 
-export default PostOutline;
+export default PostItem;

@@ -1,8 +1,6 @@
-// const remarkFrontmatter = require('remark-frontmatter');
+import remarkFrontmatter from 'remark-frontmatter';
 
-const withMDX = require('@next/mdx')();
-
-module.exports = withMDX({
+export default {
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.mdx?$/,
@@ -12,7 +10,7 @@ module.exports = withMDX({
           loader: '@mdx-js/loader',
           options: {
             providerImportSource: '@mdx-js/react',
-            remarkPlugins: [],
+            remarkPlugins: [remarkFrontmatter],
           },
         },
       ],
@@ -26,4 +24,4 @@ module.exports = withMDX({
     loader: 'imgix',
     path: 'https://images.unsplash.com/',
   },
-});
+};

@@ -3,13 +3,13 @@ import path from 'path';
 import matter from 'gray-matter';
 
 const getPosts = (limit) => {
-  const dir = fs.readdirSync(path.join(process.cwd(), 'pages', 'posts'), {
+  const dirFiles = fs.readdirSync(path.join(process.cwd(), 'pages', 'posts'), {
     withFileTypes: true,
   });
 
-  const posts = dir
+  const posts = dirFiles
     .map((file) => {
-      if (file.name.endsWith('.js')) return; // just ignoring javascript files
+      if (file.name.endsWith('.js')) return; // just ignoring any javascript files
 
       const slug = file.name.replace(/.mdx$/, '');
       const fileContent = fs.readFileSync(
@@ -22,11 +22,9 @@ const getPosts = (limit) => {
     .filter((post) => post);
 
   if (limit) {
-    const filteredPosts = posts.filter((post, index) => {
+    return posts.filter((post, index) => {
       return index + 1 <= limit;
     });
-
-    return filteredPosts;
   }
 
   return posts;

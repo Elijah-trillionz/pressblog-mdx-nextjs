@@ -12,3 +12,9 @@
   font-style: italic;
   font-size: 0.85rem;
 }
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}

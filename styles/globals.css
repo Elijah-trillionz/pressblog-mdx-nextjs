@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: inherit;
   text-decoration: underline transparent;
@@ -16,13 +20,17 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .max-width-container {
   max-width: 680px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+}
+
+.max-width-container.main {
+  padding: 50px 30px;
+}
+
+p {
+  line-height: 1.6;
 }

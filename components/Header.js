@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 
-export default function Header() {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className='max-width-container'>
@@ -19,4 +19,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default Header;

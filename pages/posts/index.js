@@ -1,5 +1,5 @@
 import getPosts from '../../scripts/fileSystem';
-import PostOutline from '../../components/PostOutline';
+import PostItem from '../../components/PostItem';
 import styles from '../../styles/Home.module.css';
 import Meta from '../../components/Meta';
 
@@ -8,8 +8,8 @@ const index = ({ posts }) => {
     <div>
       <Meta title='Blog posts - PressBlog' />
       <p className={styles.desc}>All Posts</p>
-      {posts.map((post, index) => (
-        <PostOutline key={post.slug} post={post} />
+      {posts.map((post) => (
+        <PostItem key={post.slug} post={post} className={styles.postItem} />
       ))}
     </div>
   );

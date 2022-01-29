@@ -6,3 +6,16 @@
 .link {
   color: rgb(0, 110, 255);
 }
+
+.tooltipText {
+  background: hsla(0, 0%, 0%, 0.75);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  max-width: 150px;
+}
+
+.tooltipBtn {
+  cursor: pointer;
+}

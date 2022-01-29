@@ -14,7 +14,7 @@ const index = ({ posts }) => {
 
       <div className={styles.articleList}>
         <p className={styles.desc}>Newly Published</p>
-        {posts.map((post, index) => (
+        {posts.map((post) => (
           <PostItem key={post.slug} post={post} />
         ))}
       </div>

@@ -9,14 +9,15 @@ const getPosts = (limit) => {
 
   const posts = dirFiles
     .map((file) => {
-      if (file.name.endsWith('.js')) return; // just ignoring any javascript files
+      if (!file.name.endsWith('.mdx')) return;
 
-      const slug = file.name.replace(/.mdx$/, '');
       const fileContent = fs.readFileSync(
         path.join(process.cwd(), 'pages', 'posts', file.name),
         'utf-8'
       );
       const { data, content } = matter(fileContent);
+
+      const slug = file.name.replace(/.mdx$/, '');
       return { data, content, slug };
     })
     .filter((post) => post);

@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -11,7 +11,6 @@
     "@mdx-js/loader": "^2.0.0-rc.2",
     "@mdx-js/react": "^2.0.0-rc.2",
     "@reach/disclosure": "^0.16.2",
-    "@reach/slider": "^0.16.0",
     "@reach/tooltip": "^0.16.2",
     "gray-matter": "^4.0.3",
     "next": "12.0.7",

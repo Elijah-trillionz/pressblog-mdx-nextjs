@@ -12,7 +12,7 @@ const MeetMe = () => {
         className={styles.img}
       />
       <p className={styles.p}>
-        Hey, I'm <strong>John Doe</strong>. I love coding. Lorem ipsum dolor
+        Hey, I am <strong>John Doe</strong>. I love coding. Lorem ipsum dolor
         sit, amet consectetur adipisicing elit. Reiciendis commodi numquam
         incidunt blanditiis quibusdam atque natus inventore sunt autem iusto.
       </p>

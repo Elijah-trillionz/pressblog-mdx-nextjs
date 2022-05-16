@@ -22,3 +22,8 @@ export const createMultiplePosts = (posts) => {
 
   return multiplePosts;
 };
+
+export const url =
+  process.env.NODE_ENV === 'production'
+    ? 'https://pressblog.vercel.app'
+    : 'http://localhost:3000';

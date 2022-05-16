@@ -4,6 +4,7 @@ import PostItem from '../components/PostItem';
 import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import { useState } from 'react';
+import { url } from '../scripts/utils.js';
 
 const Home = ({ posts }) => {
   const [filteredPosts, setFilteredPosts] = useState(posts);
@@ -39,7 +40,7 @@ const Home = ({ posts }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const res = await fetch('http:localhost:3000/api/posts?page=1');
+  const res = await fetch(`${url}/api/posts?page=1`);
   const posts = await res.json();
 
   return {

@@ -1,8 +1,14 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import {
+  createMultiplePosts,
+  filterPostsByPageIndex,
+} from '../../scripts/utils';
 
-const getPosts = (limit) => {
+export default function handler(req, res) {
+  const { page } = req.query;
+
   const dirFiles = fs.readdirSync(path.join(process.cwd(), 'pages', 'posts'), {
     withFileTypes: true,
   });
@@ -22,13 +28,7 @@ const getPosts = (limit) => {
     })
     .filter((post) => post);
 
-  if (limit) {
-    return posts.filter((post, index) => {
-      return index + 1 <= limit;
-    });
-  }
-
-  return posts;
-};
-
-export default getPosts;
+  res
+    .status(200)
+    .json(filterPostsByPageIndex(createMultiplePosts(posts), page));
+}

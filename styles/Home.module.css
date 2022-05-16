@@ -13,12 +13,25 @@
   font-size: 0.85rem;
 }
 
-.articleList > div {
-  margin-bottom: 50px;
+.postItem {
+  margin-bottom: 40px;
 }
 
 .img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
+}
+
+.button {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background-color: #3b3b3b;
+  color: #fff;
 }

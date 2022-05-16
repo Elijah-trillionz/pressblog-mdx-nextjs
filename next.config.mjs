@@ -1,3 +1,4 @@
+import rehypeHighlight from 'rehype-highlight';
 import remarkFrontmatter from 'remark-frontmatter';
 
 export default {
@@ -11,6 +12,7 @@ export default {
           options: {
             providerImportSource: '@mdx-js/react',
             remarkPlugins: [remarkFrontmatter],
+            rehypePlugins: [rehypeHighlight],
           },
         },
       ],

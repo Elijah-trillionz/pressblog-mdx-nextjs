@@ -4,7 +4,6 @@ import PostItem from '../components/PostItem';
 import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import { useState } from 'react';
-import { getPosts } from '../scripts/utils.js';
 
 const Home = ({ posts }) => {
   const [filteredPosts, setFilteredPosts] = useState(posts);
@@ -40,7 +39,8 @@ const Home = ({ posts }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const posts = getPosts(1);
+  const res = await fetch('https://pressblog.vercel.app/api/posts?page=1');
+  const posts = await res.json();
 
   return {
     props: {

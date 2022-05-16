@@ -40,7 +40,7 @@ const Home = ({ posts }) => {
 export default Home;
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${url}/api/posts?page=1`);
+  const res = await fetch(`https://pressblog.vercel.app/api/posts?page=1`);
   const posts = await res.json();
 
   return {

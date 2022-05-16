@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 import Meta from '../components/Meta';
 import { useState } from 'react';
 
-const index = ({ posts }) => {
+const Home = ({ posts }) => {
   const [filteredPosts, setFilteredPosts] = useState(posts);
   const [currentPageIndex, setCurrentPageIndex] = useState(1);
 
@@ -36,7 +36,7 @@ const index = ({ posts }) => {
   );
 };
 
-export default index;
+export default Home;
 
 export const getStaticProps = async () => {
   const res = await fetch('http:localhost:3000/api/posts?page=1');

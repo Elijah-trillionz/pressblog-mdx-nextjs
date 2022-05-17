@@ -10,10 +10,12 @@ const Header = () => {
         </h2>
         <ul>
           <li>
-            <Link href='/posts'>Blog</Link>
+            <Link href='/posts'>About</Link>
           </li>
           <li>
-            <Link href='/about'>About</Link>
+            <Link href='https://github.com/Elijah-trillionz/pressblog-mdx-nextjs'>
+              GitHub Code
+            </Link>
           </li>
         </ul>
       </div>

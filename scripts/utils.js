@@ -42,7 +42,7 @@ export const createMultiplePosts = (posts) => {
   const multiplePosts = [];
 
   posts.forEach((post) => {
-    for (let i = 0; i < 45; i++) {
+    for (let i = 0; i < 5; i++) {
       multiplePosts.push(post);
     }
   });
